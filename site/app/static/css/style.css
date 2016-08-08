@@ -1,0 +1,31 @@
+body {
+	background-color: #112D35;
+	padding-top: 15px;
+}
+div {
+	width: 900px;
+	height: 500px;
+	color: red;
+	margin: auto;
+    background: linear-gradient(to bottom, #094355, #045172);
+    border-radius: 8px;
+    padding: 15px;
+}
+h1 {
+	font-size: 16px;
+	font-family: Monaco;
+	background-color: #034F54;
+	color: #D7EFDE;
+}
+p {
+	font-family: "Courier New";
+	color: #84CED8;
+}
+input {
+	font-size: 16px;
+	font-family: Monaco;
+	background-color: #112D35;
+	color: #066B96;
+	border: 2px solid #066B96;
+	border-radius: 2px;
+}

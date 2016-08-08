@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+	<p>{{text}}</p>
+	<form action="/3_2" method="post">
+		{% for person in persons %}
+		<input type="radio" name="person" value={{person.number}}>{{person.text}}<br>
+		{%  endfor %}
+		<input type="submit" value="Далее...">
+	</form>
+	<p>{{error_text}}</p>
+{% endblock %}
