@@ -1,7 +1,15 @@
-{% extends "base.html" %}
+{% extends "temp_base.html" %}
 {% block content %}
-	<p>{{text}}</p>
-	<form action="/1" method="post">
+<section>
+	<article>	
+		<img class="main_img" src={{img_link}}>
+		<p class="msg">{{text}}</p>		
+	</article>	
+	<img src={{img_link2}}>
+</section>
+<footer>
+	<form action={{next_page}} method="post">
 		<input type="submit" value="Далее...">
 	</form>	
+</footer>
 {% endblock %}

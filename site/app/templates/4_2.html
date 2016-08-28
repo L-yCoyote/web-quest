@@ -1,9 +1,0 @@
-{% extends "base.html" %}
-{% block content %}
-	<p>{{text}}</p>
-	<form action="/4_2" method="post">
-		<input type="text" name="answer" placeholder="Кодовое слово">		
-		<input type="submit" value="Далее...">
-	</form>
-	<p>{{error_text}}</p>
-{% endblock %}
