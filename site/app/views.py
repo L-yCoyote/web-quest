@@ -1,13 +1,14 @@
 from flask import render_template, request, redirect, url_for
 from app import app
-from text_data import place_time, mi6_msg, text, err_text, err_text2, witness, agents, agents2
+from text_data import place_time, mi6_msg, mi6_msg2, text, err_text, err_text2, witness, agents, agents2
 
 @app.route('/')
 @app.route('/index.html')
 def index():
 	return render_template("index.html",
 		place_time = place_time["1"],
-		text = mi6_msg["1"],
+		text1 = mi6_msg["1"],
+		text2 = mi6_msg["1_2"],
 		img_link = "static\patrick.png",
 		img_link2 = "static\map.png",
 		next_page = "/1")
@@ -136,7 +137,7 @@ def page8():
 	return render_template("temp_form.html",
 		place_time = place_time["9"],
 		text = text["8"],
-		text2 = mi6_msg["2"],
+		text2 = mi6_msg2,
 		text3 = text["8_2"],
 		img_link = "static\\agents.png",
 		input_type = "checkbox",

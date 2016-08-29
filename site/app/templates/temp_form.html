@@ -9,13 +9,17 @@
 			<input type={{input_type}} name={{input_name}} placeholder={{input_placeholder}} value={{data.value}}>{{data.text}}<br>
 			{% endfor %}
 			{% if p_class %}
-			<p class={{p_class}}>{{text2}}</p>
+			<div>
+				{% for text in text2 %}			
+				<p class={{p_class}}>{{text}}</p>
+				{% endfor %}
+			</div>			
 			{% else %}
 			<p>{{text2}}</p>
 			{% endif %}
 			<p>{{text3}}</p>
 			<p class="err">{{err_msg}}</p>
-			<input type="submit" value="Далее...">
+			<input class="input_btn" type="submit" value="Далее...">
 		</form>
 	</article>
 </section>

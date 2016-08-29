@@ -10,7 +10,8 @@ main {
 	border-radius: 8px;
 	background-color: #045172;
 	color: #84CED8;
-	font-family: "Courier New";
+	font-family: Verdana, Geneva, sans-serif;	
+	font-size: 15px;
 }
 h1 {
 	font-size: 16px;
@@ -22,24 +23,68 @@ section{
 	margin: 0px 5px;
 }
 p {
-	
+	font-style: italic;
 }
 input {
 	font-size: 16px;
-	font-family: Monaco;
 	background-color: #112D35;
 	color: #066B96;
 	border: 2px solid #066B96;
 	border-radius: 2px;
 }
+.input_btn{	
+	font-family: Monaco;
+	position: absolute;
+	top: 510px;
+}
 .main_img {
-	width: 350px;
-	height: 400px;
 	float: right;
 }
-.msg {
+/*.msg {
 	color: #27AA59;
-}
+	font-family: "Courier New", Courier, monospace;
+}*/
 .err{
 	color: #F76262;
+}
+
+/*typing text animation*/
+div{
+	margin-top: 5px;
+}
+.msg{
+	color: #27AA59;
+	font-family: "Courier New", Courier, monospace;
+	font-style: normal;
+	margin: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 35em;
+	animation: type 2s steps(60, end); 
+}
+.msg:nth-child(2){
+animation: type 4s steps(60, end);
+}
+.msg:nth-child(3){
+animation: type 6s steps(60, end);
+}
+.msg:nth-child(4){
+animation: type 8s steps(60, end);
+}
+.msg:nth-child(5){
+animation: type 8s steps(60, end);
+}
+.msg:nth-child(6){
+animation: type 12s steps(60, end);
+}
+@keyframes type{ 
+	from { width: 0; } 
+} 
+@keyframes type2{
+	0%{width: 0;}
+	50%{width: 0;}
+	100%{ width: 100; } 
+} 
+@keyframes blink{
+	to{opacity: .0;}
 }
