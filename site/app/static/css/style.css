@@ -16,7 +16,9 @@ main {
 h1 {
 	font-size: 16px;
 	font-family: Monaco;
-	background-color: #034F54;
+	background-color: #035A60;
+	border-radius: 2px;
+	padding-left: 5px;
 	color: #D7EFDE;
 }
 section{
@@ -35,10 +37,19 @@ input {
 .input_btn{	
 	font-family: Monaco;
 	position: absolute;
+	width: 110px;
+	margin-left: 785px;
 	top: 510px;
+	float: right;
+}
+.input_final{
+	width: 80px;
 }
 .main_img {
 	float: right;
+}
+.no_main_img{
+	padding: 15px 0px;
 }
 /*.msg {
 	color: #27AA59;
@@ -50,7 +61,7 @@ input {
 
 /*typing text animation*/
 div{
-	margin-top: 5px;
+	margin: 15px 0px;
 }
 .msg{
 	color: #27AA59;
@@ -69,13 +80,13 @@ animation: type 4s steps(60, end);
 animation: type 6s steps(60, end);
 }
 .msg:nth-child(4){
-animation: type 8s steps(60, end);
+animation: type 7s steps(60, end);
 }
 .msg:nth-child(5){
 animation: type 8s steps(60, end);
 }
 .msg:nth-child(6){
-animation: type 12s steps(60, end);
+animation: type 18s steps(60, end);
 }
 @keyframes type{ 
 	from { width: 0; } 

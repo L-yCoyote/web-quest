@@ -2,8 +2,13 @@
 {% block content %}
 <section>
 	<article>
+		{% if img_class %}
+		<p>{{text}}</p>
+		<img class={{img_class}} src={{img_link}}>
+		{% else %}
 		<img class="main_img" src={{img_link}}>
 		<p>{{text}}</p>
+		{% endif %}
 		<form action={{next_page}} method="post">
 			{% for data in form_data %}
 			<input type={{input_type}} name={{input_name}} placeholder={{input_placeholder}} value={{data.value}}>{{data.text}}<br>

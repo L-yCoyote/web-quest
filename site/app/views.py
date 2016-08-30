@@ -53,6 +53,7 @@ def page3():
 		input_name = "answer",
 		input_placeholder = "Расшифровка",
 		form_data = [{}],
+		img_class = "no_main_img",
 		err_msg = msg,
 		next_page = next_page)
 
