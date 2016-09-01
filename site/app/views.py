@@ -37,7 +37,7 @@ def page3():
 		answer = request.form['answer']
 		if len(answer) == 0:
 			msg = err_text2
-		elif 20<len(answer)<1 or answer != "ask murphy seamrog":
+		elif 20<len(answer)<1 or answer.lower() != "ask murphy seamrog":
 			msg = err_text			
 		else:
 			return redirect(url_for("page4"), code=307)			
@@ -46,8 +46,6 @@ def page3():
 	return render_template("temp_form.html",
 		place_time = place_time["4"],
 		text = text["3"],
-		text2 = text["3_2"],
-		text3 = text["3_3"],
 		img_link = "static\\text.png",
 		input_type = "text",
 		input_name = "answer",
