@@ -11,7 +11,7 @@
 		{% endif %}
 		<form action={{next_page}} method="post">
 			{% for data in form_data %}
-			<input type={{input_type}} name={{input_name}} placeholder={{input_placeholder}} value={{data.value}}>{{data.text}}<br>
+			<label><input type={{input_type}} name={{input_name}} placeholder={{input_placeholder}} value={{data.value}}>{{data.text}}</label><br>
 			{% endfor %}
 			{% if p_class %}
 			<div>
